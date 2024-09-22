@@ -1,4 +1,5 @@
 ```bash
+git clone git@github.com:Honekatsu/.dotfiles.git
 z ./.dotfiles
 
 sudo nixos-rebuild switch -I nixos-config=configuration.nix
