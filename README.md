@@ -13,13 +13,15 @@ sudo nano /etc/nixos/configuration.nix
 ```
 
 ```bash
-nix run nixpkgs#git
-git clone git@github.com:Honekatsu/.dotfiles.git
-z ./.dotfiles
+nix-shell -p git
+git clone https://github.com/Honekatsu/.dotfiles.git
+cd ./.dotfiles
 
-sudo nixos-rebuild switch -I nixos-config=configuration.nix
+sudo nixos-rebuild switch
 
 rm flake.nix
 git add .
 nix run nixpkgs#home-manager -- switch --flake .#myHome
+
+sudo nixos-rebuild switch -I nixos-config=configuration.nix
 ```
