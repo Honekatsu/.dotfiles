@@ -135,6 +135,7 @@
       zsh
       git
       cifs-utils
+      vim
       samba
     ];
   };
