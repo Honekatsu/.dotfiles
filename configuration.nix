@@ -70,24 +70,28 @@
 
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
+  #services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
   #services.xserver.displayManager.gdm.enable = true;
   #services.xserver.desktopManager.gnome.enable = true;
 
   # Enable KDE Plasma
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
+  services.xserver.enable = true;
+  services.displayManager.sddm = {
+      enable = true;
+      wayland.enable = true;
+    };
+  services.xserver.desktopManager.plasma5.enable = true;
 
-  services.displayManager.defaultSession = "plasma";
-  services.displayManager.sddm.wayland.enable = true;
-
+  services.displayManager.defaultSession = "plasmawayland";
 #  qt = {
 #    enable = true;
 #    platformTheme = "gnome";
 #    style = "adwaita-dark";
 #  };
+  
+  programs.dconf.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
