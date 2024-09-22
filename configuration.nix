@@ -147,17 +147,29 @@
   };
   
   #samba
-  fileSystems."/home/katsu/mnt/Share-SSD" = {
-    device = "//192.168.10.60/Share-SSD";
-    fsType = "cifs";
-    options = [
-      "credentials=/etc/nixos/smb-secrets"
-      "uid=1000"
-      "gid=100"
-      "file_mode=0777"
-      "dir_mode=0777"
-    ];
-  
+  fileSystems = {
+    "/home/katsu/mnt/Share-SSD" = {
+      device = "//192.168.10.60/Share-SSD";
+      fsType = "cifs";
+      options = [
+        "credentials=/etc/nixos/smb-secrets"
+        "uid=1000"
+        "gid=100"
+        "file_mode=0777"
+        "dir_mode=0777"
+      ];
+    };
+    "/home/katsu/mnt/Share" = {
+      device = "//192.168.10.60/Share";
+      fsType = "cifs";
+      options = [
+        "credentials=/etc/nixos/smb-secrets"
+        "uid=1000"
+        "gid=100"
+        "file_mode=0777"
+        "dir_mode=0777"
+      ];
+    };
   };
   networking.firewall.extraCommands = ''
     iprables -t raw -A OUTPUT -p udp --dport 137 -j CT --helper netbios-ns
