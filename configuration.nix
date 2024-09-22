@@ -50,7 +50,7 @@
   };
 
   fonts = {
-    fonts = with pkgs; [
+    packages = with pkgs; [
       noto-fonts
       noto-fonts-cjk-serif
       noto-fonts-cjk-sans
@@ -80,13 +80,14 @@
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
 
-  qt = {
-    enable = true ;
-    platformTheme = "gnome";
-    style = "adwaita-dark";
-  };
   services.displayManager.defaultSession = "plasma";
   services.displayManager.sddm.wayland.enable = true;
+
+#  qt = {
+#    enable = true;
+#    platformTheme = "gnome";
+#    style = "adwaita-dark";
+#  };
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -174,7 +175,7 @@
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
+  networking.firewall.enable = true;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
