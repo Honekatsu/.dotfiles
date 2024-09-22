@@ -1,0 +1,15 @@
+set clipboard=unnamed "この設定を行わないとSSH接続でコピペできない（サーバ側のクリップボードが使われてしまう）
+set number "行番号を表示
+set cursorline "カーソルがある行のハイライト表示
+set mouse= "マウス操作しない
+set expandtab "TABキーで適切な数のSPACE追加
+set autoindent "改行時等のインデント自動追加
+set virtualedit=onemore "行末より先にカーソルを置ける
+set ignorecase "検索で大文字と小文字を区別しない
+set smartcase "検索に大文字が含まれていたら大文字と小文字を区別
+set incsearch "\で最初の文字を入力したら検索開始
+set hlsearch "検索結果のハイライト表示
+syntax on "シンタックスハイライトを有効化
+set laststatus=2 "スターテスバーを常時表示
+set wildmenu "補完の候補一覧表示
+colorscheme pablo "カラースキーム
