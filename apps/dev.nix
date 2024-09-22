@@ -4,6 +4,7 @@
     go
     deno
     bun
+    nodejs
     zig
     python3
     mise

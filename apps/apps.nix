@@ -4,8 +4,9 @@
     thunderbird
     keepassxc
     rclone
+    remmina
     rustdesk
-    notion
+    #notion-enhancer
     zotero
   ];
 
