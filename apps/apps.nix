@@ -8,6 +8,7 @@
     rustdesk
     #notion-enhancer
     zotero
+    libsForQt5.kcalc
   ];
 
 xdg.configFile."rclone/rclone.conf".text = "

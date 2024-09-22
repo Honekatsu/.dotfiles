@@ -81,10 +81,11 @@
   services.displayManager.sddm = {
       enable = true;
       wayland.enable = true;
-    };
-  services.xserver.desktopManager.plasma5.enable = true;
+  };
+  services.desktopManager.plasma6.enable = true;
+  #services.xserver.desktopManager.plasma5.enable = true;
 
-  services.displayManager.defaultSession = "plasmawayland";
+  #services.displayManager.defaultSession = "plasmawayland";
 #  qt = {
 #    enable = true;
 #    platformTheme = "gnome";
