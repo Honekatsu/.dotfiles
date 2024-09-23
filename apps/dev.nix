@@ -2,6 +2,7 @@
   home.packages = with pkgs; [
     gcc
     go
+    gnumake
     deno
     bun
     nodejs

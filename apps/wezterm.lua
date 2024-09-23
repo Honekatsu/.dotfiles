@@ -10,9 +10,9 @@ config.font = wezterm.font_with_fallback {
   "JetBrainsMono Nerd Font"
 }
 
---config.use_ime = true
---check_for_updates = false
---audible_bell = "Disabled"
+config.use_ime = true
+check_for_updates = false
+audible_bell = "Disabled"
 
 config.color_scheme = 'Darktooth(base16)'
 

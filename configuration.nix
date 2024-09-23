@@ -229,7 +229,11 @@
   };
 
   services.flatpak.enable = true;
-  xdg.portal.enable = true;
+  xdg.portal = {
+    enable = true;
+    extraPortals = [pkgs.xdg-desktop-portal-kde];
+    config.common.default = "kde";
+  };
 
   programs = {
     nix-ld.enable = true;
