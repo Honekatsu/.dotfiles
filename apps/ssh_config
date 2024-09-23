@@ -1,0 +1,216 @@
+# server Network
+## Network
+Host ubuwire01
+  HostName 172.20.0.20
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+
+## Management
+Host ubuprometheus01
+  HostName 172.20.5.1
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host ubu-loki
+  HostName 172.20.5.2
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host ubu-mirrorcache
+  HostName 172.20.5.5
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host rhel
+  HostName 172.20.5.10
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host ubu-Ansible
+  HostName 172.20.5.11
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+
+## Game
+### Ark
+Host ubuark01
+  HostName 172.20.10.1
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+### Minecraft
+Host ubuhamc-01
+  HostName 172.20.10.12
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host ubuhamc-02
+  HostName 172.20.10.13
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+
+Host k-ubuntu01(bungeecord)
+  HostName 172.20.10.14
+  User k
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host ubumc01-spi01
+  HostName 172.20.10.16
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host ubumc02-bungee01
+  HostName 172.20.10.20
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host ubumc02-spi01
+  HostName 172.20.10.22
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+
+# Home Network
+## Network
+Host K-OpenWRT01
+  HostName 192.168.10.1
+  User root
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host SEIL/x86 Ayame01
+  HostName 192.168.10.4
+  User admin
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host AT-x210
+  HostName 192.168.10.7
+  User katssh01
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host CRS326-24S+2Q+RM
+  HostName 192.168.10.8
+  User admin
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host Smart-UPS750PM
+  HostName 192.168.10.10
+  User apc
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+
+## DHCP 10~40
+Host Lubuntu01
+  HostName 192.168.10.11
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host K-Manjaro01
+  HostName 192.168.10.15
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+
+## Servers
+
+Host K-TrueNasroot
+  HostName 192.168.10.60
+  User root
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host K-TrueNAS01
+  HostName 192.168.10.60
+  User katsussh
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host K-TrueNAS01proxmox
+  HostName 192.168.10.60
+  User k-tn-prox01
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+
+## Virtual
+Host base01
+  HostName 192.168.10.130
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host base02
+  HostName 192.168.10.132
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+
+Host ubu-experiment
+  HostName 192.168.10.201
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host jagermeister
+  HostName 192.168.10.202
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host ubudl
+  HostName 192.168.10.203
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
