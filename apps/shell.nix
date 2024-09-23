@@ -5,6 +5,13 @@
       enableCompletion = true;
       autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
+      shellAliases = {
+        cat = "bat";
+        ls = "eza";
+        find = "fd";
+        ps = "procs";
+        grep = "rg";
+      };
     };
     starship = {
       enable = true;
@@ -24,4 +31,11 @@
       enableZshIntegration = true;
     };
   };
+  home.packages = with pkgs; [
+    bat
+    eza
+    fd
+    procs
+    ripgrep
+  ];
 }

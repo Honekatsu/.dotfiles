@@ -5,10 +5,12 @@
     gnumake
     deno
     bun
-    nodejs
+    #nodePackages.npm
+    nodejs_22
     zig
     python3
-    mise
+    #mise
     wireshark
+    python312Packages.ansible-core
   ];
 }
