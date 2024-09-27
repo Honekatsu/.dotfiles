@@ -39,7 +39,7 @@ set laststatus=2
 set wildmenu 
 
 "<見た目>"
-"カラースキームProxmoxはpablo"
+"カラースキーム"
 colorscheme pablo 
 
 highlight Normal ctermbg=none
@@ -54,7 +54,7 @@ inoremap ( ()<LEFT>
 call plug#begin() "vim-plug開始（プラグイン管理）
 Plug 'plasticboy/vim-markdown'
 "Plug 'Shougo/ddc.vim' "補完
-"Plug 'vim-denops/denops.vim' "Deno
+Plug 'vim-denops/denops.vim' "Deno
 "Plug 'Shougo/pum.vim' "ポップアップウィンドウ表示
 "Plug 'Shougo/ddc-around' "カーソル周辺の既出単語表示
 "Plug 'LumaKernel/ddc-file' "ファイル名補完
