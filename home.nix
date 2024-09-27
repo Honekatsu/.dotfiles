@@ -6,6 +6,7 @@
     ./apps/shell.nix
     ./apps/dev.nix
     ./apps/editor.nix
+    ./apps/vim.nix
     ./apps/media.nix
     ./apps/wezterm.nix
     ./apps/git.nix
