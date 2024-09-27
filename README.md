@@ -19,7 +19,7 @@ cd ./.dotfiles
 
 sudo nixos-rebuild switch
 
-rm flake.nix
+rm flake.lock
 git add .
 nix run nixpkgs#home-manager -- switch --flake .#myHome
 
