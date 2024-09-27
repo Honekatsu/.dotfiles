@@ -42,6 +42,19 @@
           ./home.nix
         ];
       };
+
+      myMac = inputs.home-manager.lib.homeManagerConfiguration {
+          pkgs = import inputs.nixpkgs {
+            system = "x86_64-darwin";
+            config.allowUnfree = true;
+          };
+          extraSpecialArgs = {
+            inherit inputs;
+          };
+          modules = [
+            ./home/mymac.nix
+          ];
+        };
     };
   };
 }
