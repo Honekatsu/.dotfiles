@@ -1,5 +1,12 @@
 # server Network
 ## Network
+Host ix2215-01
+  HostName 172.20.0.2
+  User katsuadmin
+  #IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  #IdentitiesOnly yes
 Host ubuwire01
   HostName 172.20.0.20
   User katsu
@@ -98,8 +105,22 @@ Host ubumc02-spi01
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
-
-# Home Network
+Host ubumc03-velocity01
+  HostName 172.20.10.30
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host ubumc03-forge01
+  HostName 172.20.10.35
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+  
+  # Home Network
 ## Network
 Host K-OpenWRT01
   HostName 192.168.10.1
@@ -214,3 +235,18 @@ Host ubudl
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
+Host tequila
+  HostName 192.168.10.204
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host kaku
+  HostName 192.168.10.205
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+

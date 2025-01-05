@@ -12,7 +12,7 @@
     #../apps/git.nix
     #../apps/streaming.nix
     #../apps/pc.nix
-    #../apps/ssh.nix
+    ../apps/ssh.nix
   ];
 
   home = rec {
