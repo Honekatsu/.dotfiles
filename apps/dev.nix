@@ -10,7 +10,6 @@
     zig
     python3
     #mise
-    wireshark
     python312Packages.ansible-core
   ];
 }

@@ -4,7 +4,7 @@
     #../apps/browser.nix
     #../apps/sns.nix
     #../apps/shell.nix
-    #../apps/dev.nix
+    ../apps/dev.nix
     #../apps/editor.nix
     ../apps/vim.nix
     #../apps/media.nix
