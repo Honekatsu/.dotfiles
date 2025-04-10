@@ -25,3 +25,11 @@ nix run nixpkgs#home-manager -- switch --flake .#myHome
 
 sudo nixos-rebuild switch -I nixos-config=configuration.nix
 ```
+
+## macOS
+
+```bash
+rm flake.lock
+git add .
+nix run nixpkgs#home-manager -- switch --flake .#myMac
+```

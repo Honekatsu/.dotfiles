@@ -14,7 +14,20 @@ Host ubuwire01
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
-
+Host Flatcar-net01
+  HostName 172.20.0.4
+  User flatcar
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host Flatcar-net02
+  HostName 172.20.0.5
+  User flatcar
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
 ## Management
 Host ubuprometheus01
   HostName 172.20.5.1
@@ -26,6 +39,13 @@ Host ubuprometheus01
 Host ubu-loki
   HostName 172.20.5.2
   User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host Flatcar-harbor
+  HostName harbor.honeblog.com
+  User flatcar
   IdentityFile ~/.ssh/id_ed25519
   port 22
   TCPKeepAlive no
@@ -47,6 +67,13 @@ Host rhel
 Host ubu-Ansible
   HostName 172.20.5.11
   User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+Host Flatcar-docker
+  HostName 172.20.5.14
+  User flatcar
   IdentityFile ~/.ssh/id_ed25519
   port 22
   TCPKeepAlive no
@@ -119,7 +146,14 @@ Host ubumc03-forge01
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
-  
+Host Flatcar-forgejo
+  HostName 172.20.20.1
+  User flatcar
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+
   # Home Network
 ## Network
 Host K-OpenWRT01
