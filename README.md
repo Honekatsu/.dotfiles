@@ -1,6 +1,13 @@
+# .dotfiles
+
+Nix/NixOSのconfig
+
+## NixOS
+
 ```bash
 sudo nano /etc/nixos/configuration.nix
 ```
+
 ```nix
 {config,pkgs, ...}:
 {
