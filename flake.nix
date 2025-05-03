@@ -2,7 +2,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
-    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     home-manager = {
@@ -44,17 +44,30 @@
       };
 
       myMac = inputs.home-manager.lib.homeManagerConfiguration {
-          pkgs = import inputs.nixpkgs {
-            system = "x86_64-darwin";
-            config.allowUnfree = true;
-          };
-          extraSpecialArgs = {
-            inherit inputs;
-          };
-          modules = [
-            ./home/mymac.nix
-          ];
+        pkgs = import inputs.nixpkgs {
+          system = "x86_64-darwin";
+          config.allowUnfree = true;
         };
+        extraSpecialArgs = {
+          inherit inputs;
+        };
+        modules = [
+          ./home/mymac.nix
+        ];
+      };
+
+      myWSL_x64 = inputs.home-manager.lib.homeManagerConfiguration {
+        pkgs = import inputs.nixpkgs {
+          system = "x86_64-linux";
+          config.allowUnfree = true;
+        };
+        extraSpecialArgs = {
+          inherit inputs;
+        };
+        modules = [
+          ./home/mywsl_x64.nix
+        ];
+      };
     };
   };
 }

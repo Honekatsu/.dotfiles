@@ -154,7 +154,7 @@ Host Flatcar-forgejo
   TCPKeepAlive no
   IdentitiesOnly yes
 
-  # Home Network
+# Home Network
 ## Network
 Host K-OpenWRT01
   HostName 192.168.10.1
@@ -227,6 +227,15 @@ Host K-TrueNAS01
 Host K-TrueNAS01proxmox
   HostName 192.168.10.60
   User k-tn-prox01
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+
+## SBC
+Host kr260_01
+  HostName 192.168.10.90
+  User ubuntu
   IdentityFile ~/.ssh/id_ed25519
   port 22
   TCPKeepAlive no
