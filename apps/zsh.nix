@@ -4,6 +4,6 @@
     ".zshrc" = {
       target = ".zshrc";
       source = ./.zshrc;
-    }
-  }
+    };
+  };
 }
