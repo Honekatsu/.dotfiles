@@ -5,7 +5,7 @@
       target = ".zshrc";
       source = ./.zshrc;
     };
-    ".starship" = {
+    "starship.toml" = {
       target = ".config/starship.toml";
       source = "./starship.toml";
     };
