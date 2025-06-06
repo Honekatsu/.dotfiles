@@ -7,7 +7,7 @@
     };
     ".starship" = {
       target = ".config/starship.toml";
-      source = "./.starship.toml";
+      source = "./starship.toml";
     };
   };
 }
