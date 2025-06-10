@@ -4,7 +4,7 @@ Nix/NixOSのconfig
 
 ## NixOS
 
-```bash
+```Bash
 sudo nano /etc/nixos/configuration.nix
 ```
 
@@ -19,7 +19,7 @@ sudo nano /etc/nixos/configuration.nix
 }
 ```
 
-```bash
+```Bash
 nix-shell -p git
 git clone https://github.com/Honekatsu/.dotfiles.git
 cd ./.dotfiles
@@ -35,8 +35,16 @@ sudo nixos-rebuild switch -I nixos-config=configuration.nix
 
 ## macOS
 
-```bash
+```Bash
 rm flake.lock
 git add .
 nix run nixpkgs#home-manager -- switch --flake .#myMac
+```
+
+## WSL(Ubuntu)
+
+```Bash
+rm flake.lock
+git add .
+nix run nixpkgs\#home-manager -- switch --flake .\#myWSL_x64
 ```
