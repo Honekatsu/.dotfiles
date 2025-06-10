@@ -10,11 +10,6 @@ setopt hist_no_store # historyコマンドを履歴から除外
 
 PS1="%F{green}%n@%m:%~%f$ " # 現在のディレクトリを表示
 
-#入力補完
-plugins=(
-    zsh-autosuggestions
-)
-
 export EDITOR=vim
 
 export PATH="$PATH:$HOME/.local/bin"
@@ -46,12 +41,12 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-patch-dl \
     zdharma-continuum/zinit-annex-rust
 
-zinit ice wait'0'; zinit light zsh-users/zsh-completions
 autoload -Uz compinit && compinit
 
 # Zinit plugins
-zinit light zsh-users/zsh-syntax-highlighting
-zinit light zsh-users/zsh-autosuggestions
+zinit ice wait'0'; zinit light zsh-users/zsh-completions
+zinit ice wait'0'; zinit light zsh-users/zsh-syntax-highlighting
+zinit ice wait'0'; zinit light zsh-users/zsh-autosuggestions
 
 ### End of Zinit's installer chunk
 
