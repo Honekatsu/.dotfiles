@@ -19,6 +19,7 @@ eval "$(starship init zsh)"
 
 #alias
 alias ls='eza'
+alias lg='lazygit'
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
@@ -44,9 +45,13 @@ zinit light-mode for \
 autoload -Uz compinit && compinit
 
 # Zinit plugins
+## 入力補完
 zinit ice wait'0'; zinit light zsh-users/zsh-completions
-zinit ice wait'0'; zinit light zsh-users/zsh-syntax-highlighting
 zinit ice wait'0'; zinit light zsh-users/zsh-autosuggestions
+## SyntaxHighlight
+zinit ice wait'0'; zinit light zsh-users/zsh-syntax-highlighting
+## History
+zinit light zdharma/history-search-multi-word
 
 ### End of Zinit's installer chunk
 
