@@ -22,6 +22,9 @@ eval "$(zoxide init zsh)"
 
 eval "$(starship init zsh)"
 
+#alias
+alias ls='eza'
+
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
     print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
@@ -46,7 +49,9 @@ zinit light-mode for \
 zinit ice wait'0'; zinit light zsh-users/zsh-completions
 autoload -Uz compinit && compinit
 
+# Zinit plugins
 zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-autosuggestions
 
 ### End of Zinit's installer chunk
 
