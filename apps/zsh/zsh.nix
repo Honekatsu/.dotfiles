@@ -5,9 +5,9 @@
       target = ".zshrc";
       source = ./.zshrc;
     };
-    "starship.toml" = {
-      target = ".config/starship.toml";
-      source = ./starship.toml;
+    "default.zsh" = {
+      target = ".zsh.d/default.zsh";
+      source = ./.zsh.d/default.zsh;
     };
   };
 }
