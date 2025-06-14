@@ -7,7 +7,6 @@
     ../apps/zsh/zsh.nix
     # ../apps/zsh/starship.nix
     ../apps/zsh/cli_tools.nix
-    ../apps/zsh/python_venv.nix
     # ../apps/dev.nix
     # ../apps/editor.nix
     ../apps/vim.nix
