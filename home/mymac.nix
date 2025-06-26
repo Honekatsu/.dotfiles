@@ -4,6 +4,9 @@
     #../apps/browser.nix
     #../apps/sns.nix
     #../apps/shell.nix
+    ../apps/zsh/zsh.nix
+    ../apps/zsh/starship.nix
+    ../apps/zsh/cli_tools.nix
     ../apps/dev.nix
     #../apps/editor.nix
     ../apps/vim.nix
