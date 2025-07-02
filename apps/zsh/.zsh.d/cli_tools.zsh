@@ -1,5 +1,10 @@
 #alias
 alias ls='eza'
 
-abbr -S lla='ls -la'  > /dev/null
+alias ll='ls -l'
+alias lla='ls -la'
+alias lg='lazygit'
+
+abbr -S ll='ls -l' > /dev/null
+abbr -S lla='ls -la' > /dev/null
 abbr -S lg='lazygit' > /dev/null

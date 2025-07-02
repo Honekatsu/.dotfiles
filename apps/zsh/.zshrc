@@ -45,7 +45,7 @@ zinit ice wait'0'; zinit light zsh-users/zsh-autosuggestions
 ## SyntaxHighlight
 zinit ice wait'0'; zinit light zsh-users/zsh-syntax-highlighting
 ## History
-zinit light zdharma/history-search-multi-word
+zinit ice wait'0'; zinit light zdharma/history-search-multi-word
 ## abbreviations
 zinit light olets/zsh-abbr
 
