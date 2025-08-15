@@ -55,7 +55,6 @@ zinit light olets/zsh-abbr
 
 # Load additional ZSH configuration files
 ZSHHOME="${HOME}/.zsh.d"
-echo "ZSHHOME: $ZSHHOME"
 
 if [ -d $ZSHHOME -a -r $ZSHHOME -a \
      -x $ZSHHOME ]; then
