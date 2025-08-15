@@ -11,3 +11,6 @@ abbr -S lg='lazygit' > /dev/null
 
 #PATH
 export PATH="$HOME/.bun/bin:$PATH"
+
+#hooks
+eval "$(direnv hook zsh)"
