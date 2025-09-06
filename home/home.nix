@@ -7,6 +7,7 @@
     ../apps/editor.nix
     ../apps/git.nix
     ../apps/media.nix
+    ../apps/neovim/neovim.nix
     ../apps/network.nix
     ../apps/pc.nix
     ../apps/shell.nix
