@@ -163,7 +163,7 @@ Host K-OpenWRT01
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
-Host SEIL/x86 Ayame01
+Host SEILx86Ayame01
   HostName 192.168.10.4
   User admin
   IdentityFile ~/.ssh/id_ed25519
