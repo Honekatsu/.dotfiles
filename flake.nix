@@ -23,7 +23,7 @@
         };
       };
     };
- 
+
     homeConfigurations = {
       myHome = inputs.home-manager.lib.homeManagerConfiguration {
         pkgs = import inputs.nixpkgs {
@@ -40,7 +40,7 @@
 
       myMac = inputs.home-manager.lib.homeManagerConfiguration {
         pkgs = import inputs.nixpkgs-stable {
-          system = "x86_64-darwin";
+          system = "aarch64-darwin";
           config.allowUnfree = true;
         };
         extraSpecialArgs = {
