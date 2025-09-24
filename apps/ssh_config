@@ -1,4 +1,4 @@
-# server Network
+# Public Network
 ## Network
 Host ix2215-01
   HostName 172.20.0.2
@@ -154,7 +154,7 @@ Host Flatcar-forgejo
   TCPKeepAlive no
   IdentitiesOnly yes
 
-# Home Network
+# Private Network
 ## Network
 Host K-OpenWRT01
   HostName 192.168.10.1
@@ -257,6 +257,13 @@ Host base02
   TCPKeepAlive no
   IdentitiesOnly yes
 
+Host ubu-ns3
+  HostName 192.168.10.160
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
 Host ubu-experiment
   HostName 192.168.10.201
   User katsu

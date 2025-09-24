@@ -7,7 +7,7 @@
     # ../apps/editor.nix
     # ../apps/git.nix
     # ../apps/media.nix
-    ../apps/neovim/neovim.nix
+    # ../apps/neovim/neovim.nix
     # ../apps/network.nix
     # ../apps/pc.nix
     # ../apps/shell.nix
@@ -16,7 +16,7 @@
     # ../apps/streaming.nix
     ../apps/vim.nix
     # ../apps/wezterm.nix
-    
+
     # Zsh configurations
     ../apps/zsh/zsh.nix
     # ../apps/zsh/starship.nix

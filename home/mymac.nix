@@ -14,9 +14,9 @@
     # ../apps/sns.nix
     ../apps/ssh.nix
     # ../apps/streaming.nix
-    ../apps/vim.nix
+    # ../apps/vim.nix
     # ../apps/wezterm.nix
-    
+
     # Zsh configurations
     ../apps/zsh/zsh.nix
     ../apps/zsh/starship.nix
