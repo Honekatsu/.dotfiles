@@ -885,7 +885,7 @@ Ultramarine = "🔷 "
 Unknown = "❓ "
 Uos = "🐲 "
 Void = "  "
-Windows = "🪟 "
+Windows = " "
 
 [package]
 format = "is [$symbol$version]($style) "
