@@ -1,3 +1,5 @@
+Include ~/.ssh/config.d/*.conf
+
 # Public Network
 ## Network
 Host ix2215-01
@@ -36,15 +38,8 @@ Host ubuprometheus01
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
-Host ubu-loki
-  HostName 172.20.5.2
-  User katsu
-  IdentityFile ~/.ssh/id_ed25519
-  port 22
-  TCPKeepAlive no
-  IdentitiesOnly yes
 Host Flatcar-harbor
-  HostName harbor.honeblog.com
+  HostName 172.20.5.2
   User flatcar
   IdentityFile ~/.ssh/id_ed25519
   port 22
