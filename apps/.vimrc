@@ -51,21 +51,6 @@ highlight EndOfBuffer ctermbg=none
 inoremap { {}<LEFT>
 inoremap ( ()<LEFT>
 
-call plug#begin() "vim-plug開始（プラグイン管理）
-Plug 'plasticboy/vim-markdown'
-"Plug 'Shougo/ddc.vim' "補完
-Plug 'vim-denops/denops.vim' "Deno
-"Plug 'Shougo/pum.vim' "ポップアップウィンドウ表示
-"Plug 'Shougo/ddc-around' "カーソル周辺の既出単語表示
-"Plug 'LumaKernel/ddc-file' "ファイル名補完
-"Plug 'Shougo/ddc-matcher_head' "入力中の単語を補完対象にする
-"Plug 'Shougo/ddc-sorter_rank' "補完候補のソート
-"Plug 'Shougo/ddc-converter_remove_overlap' "補完候補の重複防止
-"Plug 'Shougo/ddc-source-nextword' "次の単語を補完
-"Plug 'mattn/vim-lsp-settings' "言語の文法に応じた単語の補完
-"Plug 'prabirshrestha/vim-lsp'
-call plug#end() "vim-plug終了
-
 "<vim_markdownの設定>"
 "LaTeX数式有効化"
 let g:vim_markdown_math = 1
