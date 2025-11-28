@@ -2,10 +2,10 @@
 ## ls
 alias ls='eza'
 
-alias ll='ls -l'
-alias lla='ls -la'
-abbr -S ll='ls -l' > /dev/null
-abbr -S lla='ls -la' > /dev/null
+alias ll='ls -lg'
+alias lla='ls -lag'
+abbr -S ll='ls -lg' > /dev/null
+abbr -S lla='ls -lag' > /dev/null
 
 ## lazygit
 alias lg='lazygit'
