@@ -1,0 +1,48 @@
+#!/usr/bin/env perl
+
+# ---------- Working Directory ----------
+# カレントディレクトリをメインのソースファイルのディレクトリに変更
+$do_cd = 1;
+
+# ---------- Output Directory ----------
+# PDFの出力ディレクトリ
+$out_dir = 'out';
+# 中間生成ファイルの出力ディレクトリ
+$emulate_aux = 1;
+$aux_dir = '.out_intermediates';
+
+# ---------- Build Command (LuaLaTeX) ----------
+# lualatex で PDF を生成する
+$pdf_mode = 4;
+
+# %O はオプション、%S はソースファイルに置換
+$pdflatex = 'lualatex %O -synctex=1 -interaction=nonstopmode -file-line-error %S';
+
+# ---------- BibTeX Command ----------
+# 参考文献処理に pbibtex を使用
+$bibtex = 'pbibtex -kanji=utf8 %O %B';
+
+# ---------- Clean-up Files ----------
+# "latexmk -c" を実行した際に削除される拡張子を指定
+$clean_ext = 'bbl blg idx ind out acn acr alg glg glo gls ist fls log fdb_latexmk snm nav dvi synctex.gz';
+
+# ---------- Continuous Preview (Optional) ----------
+# -pvc オプション使用時の挙動制御（変更があれば自動ビルド）
+$pvc_view_file_via_temporary = 0;
+
+# ---------- Viewer ----------
+# macOS
+if ($^O eq 'darwin') {
+    # 事前にSkimの設定で「ファイルの変更をチェック」を有効化すること
+    # -a: アプリケーション名を指定して起動, -g: フォーカスは今のウィンドウのまま
+    $pdf_previewer = 'open -ga /Applications/Skim.app/';
+# Windows
+} elsif ($^O eq 'MSWin32') {
+    $pdf_previewer = 'SumatraPDF -reuse-instance'; 
+# Linux
+} elsif ($^O eq 'linux') {
+    # Linux: Zathura (軽量で自動リロード対応)
+    $pdf_previewer = 'zathura';
+    # または Evince
+    # $pdf_previewer = 'evince';
+}

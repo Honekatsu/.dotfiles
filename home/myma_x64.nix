@@ -6,6 +6,7 @@
     ../apps/direnv.nix
     # ../apps/editor.nix
     # ../apps/git.nix
+    ../apps/LaTeX/latex.nix
     # ../apps/media.nix
     # ../apps/neovim/neovim.nix
     # ../apps/network.nix
