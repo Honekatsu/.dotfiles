@@ -1,9 +1,9 @@
 {pkgs, ...}:
 {
   home.file = {
-    "~/.latexmk" = {
-      target = ".latexmk";
-      source = ./.latexmk;
+    ".latexmkrc" = {
+      target = ".latexmkrc";
+      source = ./latexmkrc;
     };
   };
 }

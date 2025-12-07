@@ -38,7 +38,7 @@ if ($^O eq 'darwin') {
     $pdf_previewer = 'open -ga /Applications/Skim.app/';
 # Windows
 } elsif ($^O eq 'MSWin32') {
-    $pdf_previewer = 'SumatraPDF -reuse-instance'; 
+    $pdf_previewer = $ENV{LOCALAPPDATA} . '/SumatraPDF/SumatraPDF.exe -reuse-instance';
 # Linux
 } elsif ($^O eq 'linux') {
     # Linux: Zathura (軽量で自動リロード対応)
