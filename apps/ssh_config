@@ -73,6 +73,22 @@ Host Flatcar-docker
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
+Host Flatcar-Prometheus
+  HostName 172.20.5.15
+  User flatcar
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+
+## DB
+Host Flatcar-db01
+  HostName 172.20.6.1
+  User flatcar
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
 
 ## Game
 ### Ark
