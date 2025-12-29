@@ -13,6 +13,7 @@ Host ubuwire01
   HostName 172.20.0.20
   User katsu
   IdentityFile ~/.ssh/id_ed25519
+  ForwardAgent yes
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
@@ -293,6 +294,7 @@ Host ubudl
   HostName 192.168.10.203
   User katsu
   IdentityFile ~/.ssh/id_ed25519
+  ForwardAgent yes
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
