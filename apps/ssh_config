@@ -32,13 +32,6 @@ Host Flatcar-net02
   TCPKeepAlive no
   IdentitiesOnly yes
 ## Management
-Host ubuprometheus01
-  HostName 172.20.5.1
-  User katsu
-  IdentityFile ~/.ssh/id_ed25519
-  port 22
-  TCPKeepAlive no
-  IdentitiesOnly yes
 Host Flatcar-harbor
   HostName 172.20.5.2
   User flatcar
@@ -50,6 +43,7 @@ Host ubu-mirrorcache
   HostName 172.20.5.5
   User katsu
   IdentityFile ~/.ssh/id_ed25519
+  ForwardAgent yes
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
@@ -64,6 +58,7 @@ Host ubu-Ansible
   HostName 172.20.5.11
   User katsu
   IdentityFile ~/.ssh/id_ed25519
+  ForwardAgent yes
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
@@ -105,6 +100,7 @@ Host ubuhamc-01
   HostName 172.20.10.12
   User katsu
   IdentityFile ~/.ssh/id_ed25519
+  ForwardAgent yes
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
