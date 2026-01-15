@@ -6,10 +6,10 @@
     deno
     bun
     #nodePackages.npm
-    nodejs_22
+    # nodejs_22
     zig
     python3
     #mise
-    python312Packages.ansible-core
+    # python312Packages.ansible-core
   ];
 }
