@@ -7,6 +7,10 @@ alias lla='ls -lag'
 abbr -S ll='ls -lg' > /dev/null
 abbr -S lla='ls -lag' > /dev/null
 
+## tree
+alias tre='tree -v'
+abbr -S tre='tree -v' > /dev/null
+
 ## lazygit
 alias lg='lazygit'
 abbr -S lg='lazygit' > /dev/null
