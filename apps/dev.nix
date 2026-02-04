@@ -4,7 +4,7 @@
     go
     gnumake
     deno
-    bun
+    # bun
     #nodePackages.npm
     # nodejs_22
     zig
