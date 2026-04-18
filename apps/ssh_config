@@ -265,6 +265,14 @@ Host base02
   TCPKeepAlive no
   IdentitiesOnly yes
 
+Host ubu-octoprint
+  HostName 192.168.10.140
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+
 Host ubu-ns3
   HostName 192.168.10.160
   User katsu
