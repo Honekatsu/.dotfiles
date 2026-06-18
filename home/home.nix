@@ -17,18 +17,18 @@
     ../apps/streaming.nix
     ../apps/vim.nix
     ../apps/wezterm.nix
-    
+
     # Zsh configurations
     ../apps/zsh/zsh.nix
     ../apps/zsh/starship.nix
     ../apps/zsh/cli_tools.nix
     #../apps/zsh/xdg_config_home.nix
   ];
-  
+
   home = rec {
     username = "katsu";
     homeDirectory = "/home/${username}";
-    stateVersion = "25.11";
+    stateVersion = "26.05";
   };
 
   programs.home-manager.enable = true;
