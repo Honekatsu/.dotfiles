@@ -21,6 +21,7 @@
     # Zsh configurations
     ../apps/zsh/zsh.nix
     ../apps/zsh/starship.nix
+    # ../apps/zsh/pure.nix
     ../apps/zsh/cli_tools.nix
     #../apps/zsh/xdg_config_home.nix
   ];
