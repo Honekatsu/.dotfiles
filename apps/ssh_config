@@ -58,7 +58,6 @@ Host ubu-Ansible
   HostName 172.20.5.11
   User katsu
   IdentityFile ~/.ssh/id_ed25519
-  ForwardAgent yes
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
