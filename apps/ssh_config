@@ -153,6 +153,13 @@ Host Flatcar-forgejo
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
+Host ubu-forgejo-runner
+  HostName 172.20.20.2
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
 
 # Home Network
 ## Network
