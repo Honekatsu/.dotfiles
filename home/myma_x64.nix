@@ -2,26 +2,34 @@
   imports = [
     # ../apps/apps.nix
     # ../apps/browser.nix
-    # ../apps/sns.nix
+    # ../apps/dev.nix
+    ../apps/direnv.nix
+    # ../apps/editor.nix
+    # ../apps/git.nix
+    ../apps/LaTeX/latex.nix
+    # ../apps/media.nix
+    # ../apps/neovim/neovim.nix
+    # ../apps/network.nix
+    # ../apps/pc.nix
     # ../apps/shell.nix
+    # ../apps/sns.nix
+    ../apps/ssh.nix
+    # ../apps/streaming.nix
+    ../apps/vim.nix
+    # ../apps/wezterm.nix
+
+    # Zsh configurations
     ../apps/zsh/zsh.nix
     # ../apps/zsh/starship.nix
+    # ../apps/zsh/pure.nix
     ../apps/zsh/cli_tools.nix
-    # ../apps/dev.nix
-    # ../apps/editor.nix
-    ../apps/vim.nix
-    # ../apps/media.nix
-    # ../apps/wezterm.nix
-    # ../apps/git.nix
-    # ../apps/streaming.nix
-    # ../apps/pc.nix
-    ../apps/ssh.nix
+    #../apps/zsh/xdg_config_home.nix
   ];
 
   home = rec {
     username = "katsu";
     homeDirectory = "/home/${username}";
-    stateVersion = "24.11";
+    stateVersion = "26.05";
   };
 
   programs.home-manager.enable = true;

@@ -1,0 +1,26 @@
+# ルートディレクトリのeditorconfig
+root = true
+
+# 全体設定
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf #改行コード
+## 行末スペースを削除
+trim_trailing_whitespace = true
+## ファイル末尾を改行(gitでdiffがおかしくならないようにするため)
+insert_final_newline = true
+## 文字コード
+charset = utf-8
+
+# TypeScript, JavaScript, JSON
+[*.{ts,js,json}]
+indent_size = 4
+
+# Markdown
+[*.{md,markdown,mdown,mkd,mdx}]
+trim_trailing_whitespace = false # 行末スペースを保持
+
+# Makefile
+[{Makefile,makefile,*.mk}]
+indent_style = tab

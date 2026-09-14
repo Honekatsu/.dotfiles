@@ -1,0 +1,5 @@
+customCommands:
+  - command: bun x czg
+    context: files
+    output: terminal
+    key: c

@@ -1,4 +1,6 @@
-# server Network
+Include ~/.ssh/config.d/*.conf
+
+# Public Network
 ## Network
 Host ix2215-01
   HostName 172.20.0.2
@@ -11,6 +13,7 @@ Host ubuwire01
   HostName 172.20.0.20
   User katsu
   IdentityFile ~/.ssh/id_ed25519
+  ForwardAgent yes
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
@@ -29,22 +32,8 @@ Host Flatcar-net02
   TCPKeepAlive no
   IdentitiesOnly yes
 ## Management
-Host ubuprometheus01
-  HostName 172.20.5.1
-  User katsu
-  IdentityFile ~/.ssh/id_ed25519
-  port 22
-  TCPKeepAlive no
-  IdentitiesOnly yes
-Host ubu-loki
-  HostName 172.20.5.2
-  User katsu
-  IdentityFile ~/.ssh/id_ed25519
-  port 22
-  TCPKeepAlive no
-  IdentitiesOnly yes
 Host Flatcar-harbor
-  HostName harbor.honeblog.com
+  HostName 172.20.5.2
   User flatcar
   IdentityFile ~/.ssh/id_ed25519
   port 22
@@ -54,6 +43,7 @@ Host ubu-mirrorcache
   HostName 172.20.5.5
   User katsu
   IdentityFile ~/.ssh/id_ed25519
+  ForwardAgent yes
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
@@ -78,6 +68,22 @@ Host Flatcar-docker
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
+Host Flatcar-Prometheus
+  HostName 172.20.5.15
+  User flatcar
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+
+## DB
+Host Flatcar-db01
+  HostName 172.20.6.1
+  User flatcar
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
 
 ## Game
 ### Ark
@@ -93,6 +99,7 @@ Host ubuhamc-01
   HostName 172.20.10.12
   User katsu
   IdentityFile ~/.ssh/id_ed25519
+  ForwardAgent yes
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
@@ -161,7 +168,7 @@ Host ubu-forgejo-runner
   TCPKeepAlive no
   IdentitiesOnly yes
 
-# Home Network
+# Private Network
 ## Network
 Host K-OpenWRT01
   HostName 192.168.10.1
@@ -170,7 +177,7 @@ Host K-OpenWRT01
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
-Host SEIL/x86 Ayame01
+Host SEILx86Ayame01
   HostName 192.168.10.4
   User admin
   IdentityFile ~/.ssh/id_ed25519
@@ -264,6 +271,21 @@ Host base02
   TCPKeepAlive no
   IdentitiesOnly yes
 
+Host ubu-octoprint
+  HostName 192.168.10.140
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
+
+Host ubu-ns3
+  HostName 192.168.10.160
+  User katsu
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
 Host ubu-experiment
   HostName 192.168.10.201
   User katsu
@@ -282,6 +304,7 @@ Host ubudl
   HostName 192.168.10.203
   User katsu
   IdentityFile ~/.ssh/id_ed25519
+  ForwardAgent yes
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
