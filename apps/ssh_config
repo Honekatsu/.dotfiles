@@ -167,6 +167,13 @@ Host ubu-forgejo-runner01
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
+Host Flatcar-llm-wiki-engine
+  HostName 172.20.20.10
+  User flatcar
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
 
 # Private Network
 ## Network
