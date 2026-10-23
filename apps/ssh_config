@@ -75,6 +75,13 @@ Host Flatcar-Prometheus
   port 22
   TCPKeepAlive no
   IdentitiesOnly yes
+Host Flatcar-vulnerability-mgmt
+  HostName 172.20.5.20
+  User flatcar
+  IdentityFile ~/.ssh/id_ed25519
+  port 22
+  TCPKeepAlive no
+  IdentitiesOnly yes
 
 ## DB
 Host Flatcar-db01
