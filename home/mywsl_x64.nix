@@ -2,7 +2,7 @@
   imports = [
     # ../apps/apps.nix
     # ../apps/browser.nix
-    ../apps/dev.nix
+    # ../apps/dev.nix
     ../apps/direnv.nix
     # ../apps/editor.nix
     # ../apps/git.nix
